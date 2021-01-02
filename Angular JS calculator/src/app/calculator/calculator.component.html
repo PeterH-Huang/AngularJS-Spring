@@ -1,0 +1,26 @@
+<p>calculator works!</p>
+<table>
+  <tr>
+    <td>First Number:</td>
+    <input name="fNum" type = "number" [(ngModel)]="fNum" >
+  </tr>
+
+  <tr>
+    <td>Second Number:</td>
+    <input name="sNum" type = "number"  [(ngModel)]="sNum">
+  </tr>
+
+  <tr>
+    <h3>Result: {{rNum}}</h3>
+  </tr>
+
+  <tr>
+    <td><button (click)=add()>+</button></td>
+
+    <td><button (click)="sub()">-</button></td>
+
+    <td><button (click)="multi()">*</button></td>
+
+    <td><button (click)="div()">/</button></td>
+  </tr>
+</table>
